@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neon ArcStar 🚀</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+</head>
+<body>
+    <h2>🚀 Neon ArcStar 💫</h2>
+    <p>Enter equation in terms of <b>x</b> (e.g., <code>R*sin(x+ϕ)</code>, <code>-0.1*(x-5)^2 + 8</code>, <code>5*sin(x)+5</code>)</p>
+    <input type="text" id="equation" value="R*sin(x+ϕ)">
+    <br>
+    <label>Number of Stars: </label>
+    <input type="number" id="starCount" min="1" max="20" value="5">
+    <br>
+    <button onclick="launchBall()">🚀 Launch</button>
+    <button class="secondary-btn" onclick="randomizeStars()">🎲 Random Stars</button>
+    <p>⭐ Score: <span id="score">0</span></p>
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
